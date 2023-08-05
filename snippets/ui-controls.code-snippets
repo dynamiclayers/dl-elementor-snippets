@@ -1,1 +1,50 @@
-{}
+{
+    "EL Heading UI Field": {
+        "prefix": "dlheading",
+        "description": "Elementor heading UI control.",
+        "body": [
+          "$$this->add_control(",
+          "    '${1:field_id}',",
+          "    [",
+          "        'label' => esc_html__( '${2:Field Label}', 'textdomain' ),",
+          "        'type' => \\Elementor\\Controls_Manager::HEADING,",
+          "        'separator' => 'before'",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Raw HTML UI Field": {
+        "prefix": "dlrawhtml",
+        "description": "Elementor raw html UI control.",
+        "body": [
+          "$$this->add_control(",
+          "    '${1:field_id}',",
+          "    [",
+          "        'label' => esc_html__( '${2:Field Label}', 'textdomain' ),",
+          "        'type' => \\Elementor\\Controls_Manager::RAW_HTML,",
+          "        'raw' => esc_html__( 'A very important message to show in the panel.', 'textdomain' ),",
+          "        'content_classes' => 'your-class'",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Divider UI Field": {
+        "prefix": "dldivider",
+        "description": "Elementor divider UI control.",
+        "body": [
+          "$$this->add_control(",
+          "    '${1:field_id}',",
+          "    [",
+          "        'type' => \\Elementor\\Controls_Manager::DIVIDER,",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Field Separator": {
+        "prefix": "dlseparator",
+        "description": "Elementor control separator.",
+        "body": [
+          "'separator' => 'before',"
+        ]
+    }
+}

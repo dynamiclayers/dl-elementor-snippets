@@ -1,0 +1,107 @@
+{
+    "EL Tab Content Section": {
+        "prefix": "dlcontentsection",
+        "description": "Elementor tab content control section.",
+        "body": [
+          "$$this->start_controls_section(",
+          "    'section_${1:content}',",
+          "    [",
+          "        'label' => esc_html__( '${1:Section Title}', 'redias-core' )",
+          "    ]",
+          ");",
+          "",
+          "// Controls goes here",
+          "",
+          "$$this->end_controls_section();"
+        ]
+    },
+    "EL Tab Style Section": {
+        "prefix": "dlstylesection",
+        "description": "Elementor tab style control section.",
+        "body": [
+          "$$this->start_controls_section(",
+          "    'section_${1:style}',",
+          "    [",
+          "        'label' => esc_html__( '${1:Section Title}', 'redias-core' ),",
+          "        'tab'   => Controls_Manager::TAB_STYLE,",
+          "    ]",
+          ");",
+          "",
+          "// Controls goes here",
+          "",
+          "$$this->end_controls_section();"
+        ]
+    },
+    "EL Tab Control": {
+        "prefix": "dltab",
+        "description": "Elementor tab control.",
+        "body": [
+          "// Tab Start",
+          "$$this->start_controls_tabs( 'style_tabs' );",
+          "        ",
+          "$$this->start_controls_tab(",
+          "    'normal_tab',",
+          "    [",
+          "        'label' => esc_html__( 'Normal', 'redias-core' ),",
+          "    ]",
+          ");",
+          "",
+          "// Normal controls goes here",
+          "",
+          "$$this->end_controls_tab();",
+          "",
+          "$$this->start_controls_tab(",
+          "    'hover_tab',",
+          "    [",
+          "        'label' => esc_html__( 'Hover', 'redias-core' )",
+          "    ]",
+          ");",
+          "",
+          "// Hover controls goes here",
+          "",
+          "$$this->end_controls_tab();",
+          "",
+          "$$this->end_controls_tabs();",
+          "// Tab End"
+        ]
+    },
+    "EL Render HTML Attributes": {
+        "prefix": "dlrenderattr",
+        "description": "Elementor add render attributes.",
+        "body": [
+          "$$this->add_render_attribute( 'wrapper', [ 'class' => [ 'class-1', 'class-2' ] ] );"
+        ]
+    },
+    "EL Get Render Attribute String": {
+        "prefix": "dlgetrenderattr",
+        "description": "Elementor get render attribute string.",
+        "body": [
+          "<?php echo $$this->get_render_attribute_string( 'wrapper' ); ?>"
+        ]
+    },
+    "EL Inline Editing Attributes": {
+        "prefix": "dlinlineediting",
+        "description": "Elementor add inline editing attributes.",
+        "body": [
+          "$$this->add_inline_editing_attributes( 'title', 'none' );"
+        ]
+    },
+    "EL Get Script Depends": {
+        "prefix": "dlscriptdepends",
+        "description": "Elementor get script depends.",
+        "body": [
+          "public function get_script_depends() {",
+          "    return [ 'script-handle' ];",
+          "}"
+        ]
+    },
+    "EL Get Style Depends": {
+        "prefix": "dlstyledepends",
+        "description": "Elementor get style depends.",
+        "body": [
+          "public function get_style_depends() {",
+          "    return [ 'style-handle' ];",
+          "}"
+        ]
+    }
+}

@@ -1,1 +1,109 @@
-{}
+{
+    "EL Typography Field": {
+        "prefix": "dltypo",
+        "description": "Elementor typography control.",
+        "body": [
+          "$$this->add_group_control(",
+          "    \\Elementor\\Group_Control_Typography::get_type(),",
+          "    [",
+          "        'name' => '${1:typography}',",
+          "        'selector' => '{{WRAPPER}} .your-class',",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Text Stroke Field": {
+        "prefix": "dltextstroke",
+        "description": "Elementor text stroke control.",
+        "body": [
+          "$$this->add_group_control(",
+          "    \\Elementor\\Group_Control_Text_Stroke::get_type(),",
+          "    [",
+          "        'name' => '${1:text_stroke}',",
+          "        'selector' => '{{WRAPPER}} .your-class',",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Text Shadow Group Field": {
+        "prefix": "dltextshadowgroup",
+        "description": "Elementor text shadow group control.",
+        "body": [
+          "$$this->add_group_control(",
+          "    \\Elementor\\Group_Control_Text_Shadow::get_type(),",
+          "    [",
+          "        'name' => '${1:text_shadow}',",
+          "        'selector' => '{{WRAPPER}} .your-class',",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Box Shadow Group Field": {
+        "prefix": "dlboxshadowgroup",
+        "description": "Elementor box shadow group control.",
+        "body": [
+          "$$this->add_group_control(",
+          "    \\Elementor\\Group_Control_Box_Shadow::get_type(),",
+          "    [",
+          "        'name' => '${1:box_shadow}',",
+          "        'selector' => '{{WRAPPER}} .your-class',",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Border Field": {
+        "prefix": "dlborder",
+        "description": "Elementor border control.",
+        "body": [
+          "$$this->add_group_control(",
+          "    \\Elementor\\Group_Control_Border::get_type(),",
+          "    [",
+          "        'name' => '${1:field_id}',",
+          "        'selector' => '{{WRAPPER}} .your-class',",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Background Field": {
+        "prefix": "dlbg",
+        "description": "Elementor background control.",
+        "body": [
+          "$$this->add_group_control(",
+          "    \\Elementor\\Group_Control_Background::get_type(),",
+          "    [",
+          "        'name' => '${1:field_id}',",
+          "        'types' => [ 'classic', 'gradient' ],",
+          "        'selector' => '{{WRAPPER}} .your-class',",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Image Size Field": {
+        "prefix": "dlimgsize",
+        "description": "Elementor image size control.",
+        "body": [
+          "$$this->add_group_control(",
+          "    \\Elementor\\Group_Control_Image_Size::get_type(),",
+          "    [",
+          "        'name' => 'thumbnail', // Usage: `{name}_size` and `{name}_custom_dimension`, in this case `thumbnail_size` and `thumbnail_custom_dimension`.",
+          "        'exclude' => [ 'custom' ],",
+          "        'include' => [],",
+          "        'default' => 'large',",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL CSS Filter Field": {
+        "prefix": "dlcssfilter",
+        "description": "Elementor CSS filter control.",
+        "body": [
+          "$$this->add_group_control(",
+          "    \\Elementor\\Group_Control_Css_Filter::get_type(),",
+          "    [",
+          "        'name' => '${1:field_id}',",
+          "        'selector' => '{{WRAPPER}} .your-class',",
+          "    ]",
+          ");"
+        ]
+    }
+}
