@@ -1,0 +1,109 @@
+{
+    "EL Slider Field": {
+        "prefix": "dlslider",
+        "description": "Elementor slider control.",
+        "body": [
+          "$$this->add_responsive_control(",
+          "    '${1:field_id}',",
+          "    [",
+          "        'label' => esc_html__( '${2:Field Label}', 'textdomain' ),",
+          "        'type' => \\Elementor\\Controls_Manager::SLIDER,",
+          "        'size_units' => [ 'px', '%' ],",
+          "        'range' => [",
+          "            'px' => [",
+          "                'min' => 0,",
+          "                'max' => 1000,",
+          "                'step' => 5,",
+          "            ],",
+          "            '%' => [",
+          "                'min' => 0,",
+          "                'max' => 100,",
+          "            ],",
+          "        ],",
+          "        'default' => [",
+          "            'unit' => '%',",
+          "            'size' => 50",
+          "        ],",
+          "        'selectors' => [",
+          "            '{{WRAPPER}} .your-class' => 'width: {{SIZE}}{{UNIT}};'",
+          "        ]",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Opacity Field": {
+        "prefix": "dlopacity",
+        "description": "Elementor opacity control.",
+        "body": [
+          "$$this->add_responsive_control(",
+          "    '${1:field_id}',",
+          "    [",
+          "        'label' => esc_html__( '${2:Opacity}', 'textdomain' ),",
+          "        'type' => \\Elementor\\Controls_Manager::SLIDER,",
+          "        'size_units' => ['px'],",
+          "        'range' => [",
+          "            'px' => [",
+          "                'min' => 0,",
+          "                'max' => 1,",
+          "                'step' => 0.1",
+          "            ]",
+          "        ],",
+          "        'selectors' => [",
+          "            '{{WRAPPER}} .your-class' => 'opacity: {{SIZE}};'",
+          "        ]",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Padding Field": {
+        "prefix": "dlpadding",
+        "description": "Elementor padding control.",
+        "body": [
+          "$$this->add_responsive_control(",
+          "    '${1:field_id}',",
+          "    [",
+          "        'label' => esc_html__( '${2:Padding}', 'textdomain' ),",
+          "        'type' => \\Elementor\\Controls_Manager::DIMENSIONS,",
+          "        'size_units' => [ 'px', '%' ],",
+          "        'selectors' => [",
+          "            '{{WRAPPER}} .your-class' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',",
+          "        ]",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Margin Field": {
+        "prefix": "dlmargin",
+        "description": "Elementor margin control.",
+        "body": [
+          "$$this->add_responsive_control(",
+          "    '${1:field_id}',",
+          "    [",
+          "        'label' => esc_html__( '${2:Margin}', 'textdomain' ),",
+          "        'type' => \\Elementor\\Controls_Manager::DIMENSIONS,",
+          "        'size_units' => [ 'px', '%' ],",
+          "        'selectors' => [",
+          "            '{{WRAPPER}} .your-class' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',",
+          "        ]",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Border Radius Field": {
+        "prefix": "dlbdrs",
+        "description": "Elementor border radius control.",
+        "body": [
+          "$$this->add_control(",
+          "    '${1:field_id}',",
+          "    [",
+          "        'label' => esc_html__( 'Border Radius', 'textdomain' ),",
+          "        'type' => \\Elementor\\Controls_Manager::DIMENSIONS,",
+          "        'size_units' => [ 'px', '%' ],",
+          "        'selectors' => [",
+          "            '{{WRAPPER}} .your-class' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',",
+          "        ],",
+          "    ]",
+          ");"
+        ]
+    }
+}

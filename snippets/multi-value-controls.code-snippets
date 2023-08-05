@@ -1,0 +1,131 @@
+{
+    "EL URL Field": {
+        "prefix": "dlurl",
+        "description": "Elementor URL/Link control.",
+        "body": [
+          "$$this->add_control(",
+          "    '${1:field_id}',",
+          "    [",
+          "        'label' => esc_html__( '${2:Link}', 'textdomain' ),",
+          "        'type' => \\Elementor\\Controls_Manager::URL,",
+          "        'options' => [ 'url', 'is_external', 'nofollow' ],",
+          "        'default' => [",
+          "            'url' => '',",
+          "            'is_external' => true,",
+          "            'nofollow' => true,",
+          "        ],",
+          "        'label_block' => true",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Media Field": {
+        "prefix": "dlmedia",
+        "description": "Elementor Media/Image control.",
+        "body": [
+          "$$this->add_control(",
+          "    '${1:field_id}',",
+          "    [",
+          "        'label' => esc_html__( '${2:Choose Image}', 'textdomain' ),",
+          "        'type' => \\Elementor\\Controls_Manager::MEDIA,",
+          "        'default' => [",
+          "            'url' => \\Elementor\\Utils::get_placeholder_image_src()",
+          "        ]",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Image Dimension Field": {
+        "prefix": "dlimagedimension",
+        "description": "Elementor image dimension control.",
+        "body": [
+          "$$this->add_control(",
+          "    '${1:field_id}',",
+          "    [",
+          "        'label' => esc_html__( '${2:Image Dimension}', 'textdomain' ),",
+          "        'type' => \\Elementor\\Controls_Manager::IMAGE_DIMENSIONS,",
+          "        'description' => esc_html__( 'Crop the original image size to any custom size. Set custom width or height to keep the original size ratio.', 'textdomain' ),",
+          "        'default' => [",
+          "            'width' => '',",
+          "            'height' => ''",
+          "        ]",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Icon Field": {
+        "prefix": "dlicon",
+        "description": "Elementor icon control.",
+        "body": [
+          "$$this->add_control(",
+          "    '${1:field_id}',",
+          "    [",
+          "        'label' => esc_html__( '${2:Icon}', 'textdomain' ),",
+          "        'type' => \\Elementor\\Controls_Manager::ICONS,",
+          "        'default' => [",
+          "            'value' => 'fas fa-circle',",
+          "            'library' => 'fa-solid',",
+          "        ]",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Icon Recommended": {
+        "prefix": "dliconrecomended",
+        "description": "Elementor icon recomended.",
+        "body": [
+          "'recommended' => [",
+          "    'fa-solid' => [",
+          "        'circle',",
+          "        'dot-circle',",
+          "        'square-full',",
+          "    ],",
+          "    'fa-regular' => [",
+          "        'circle',",
+          "        'dot-circle',",
+          "        'square-full',",
+          "    ],",
+          "]"
+        ]
+    },
+    "EL Icon SVG exclude": {
+        "prefix": "dliconsvgexclude",
+        "description": "Elementor icon svg exclude.",
+        "body": [
+          "'skin' => 'inline',",
+          "'exclude_inline_options' => ['svg']"
+        ]
+    },
+    "EL Text Shadow Field": {
+        "prefix": "dltextshadow",
+        "description": "Elementor text shadow control.",
+        "body": [
+          "$$this->add_control(",
+          "    '${1:field_id}',",
+          "    [",
+          "        'label' => esc_html__( '${2:Text Shadow}', 'textdomain' ),",
+          "        'type' => \\Elementor\\Controls_Manager::TEXT_SHADOW,",
+          "        'selectors' => [",
+          "            '{{SELECTOR}}' => 'text-shadow: {{HORIZONTAL}}px {{VERTICAL}}px {{BLUR}}px {{COLOR}};',",
+          "        ],",
+          "    ]",
+          ");"
+        ]
+    },
+    "EL Box Shadow Field": {
+        "prefix": "dlboxshadow",
+        "description": "Elementor box shadow control.",
+        "body": [
+          "$$this->add_control(",
+          "    '${1:field_id}',",
+          "    [",
+          "        'label' => esc_html__( '${2:Box Shadow}', 'textdomain' ),",
+          "        'type' => \\Elementor\\Controls_Manager::BOX_SHADOW,",
+          "        'selectors' => [",
+          "            '{{SELECTOR}}' => 'box-shadow: {{HORIZONTAL}}px {{VERTICAL}}px {{BLUR}}px {{SPREAD}}px {{COLOR}};',",
+          "        ],",
+          "    ]",
+          ");"
+        ]
+    }
+}

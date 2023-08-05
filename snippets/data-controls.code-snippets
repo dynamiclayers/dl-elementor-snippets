@@ -1,0 +1,474 @@
+{
+    "EL Text Field": {
+		"prefix": "dltext",
+		"body": [
+			"$$this->add_control(",
+			"\t'${1:field_id}',",
+			"\t[",
+			"\t\t'label'        => esc_html__( '${2:Text}', 'textdomain' ),",
+			"\t\t'type'         => \\Elementor\\Controls_Manager::TEXT,",
+			"\t\t'label_block'  => true,",
+			"\t\t'default'      => esc_html__( '${3:Default Text}', 'textdomain' ),",
+			"\t\t'placeholder'  => esc_html__( '${4:Text goes here...}', 'textdomain' ),",
+			"\t]",
+			");"
+		],
+		"description": "Elementor text control."
+	},
+    "EL Number Field": {
+		"prefix": "dlnumber",
+		"body": [
+			"$$this->add_control(",
+			"\t'${1:field_id}',",
+			"\t[",
+			"\t\t'label'   => esc_html__( '${1:Number}', 'textdomain' ),",
+			"\t\t'type'    => \\Elementor\\Controls_Manager::NUMBER,",
+			"\t\t'min'     => 0,",
+			"\t\t'max'     => 100,",
+			"\t\t'step'    => 1,",
+			"\t\t'default' => ${3:''},",
+			"\t]",
+			");"
+		],
+		"description": "Elementor number control."
+	},
+    "EL Textarea Field": {
+		"prefix": "dltextarea",
+		"body": [
+			"$$this->add_control(",
+			"\t'${1:field_id}',",
+			"\t[",
+			"\t\t'label'        => esc_html__( '${2:Textarea}', 'textdomain' ),",
+			"\t\t'type'         => \\Elementor\\Controls_Manager::TEXTAREA,",
+			"\t\t'rows'         => 10,",
+			"\t\t'default'      => esc_html__( 'Default description', 'textdomain' ),",
+			"\t\t'placeholder'  => esc_html__( 'Type your description here', 'textdomain' ),",
+			"\t]",
+			");"
+		],
+		"description": "Elementor textarea control."
+	},
+	"EL WYSIWYG Field": {
+		"prefix": "dlwysiwyg",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__('Description', 'textdomain'),",
+		  "        'type' => \\Elementor\\Controls_Manager::WYSIWYG,",
+		  "        'default' => esc_html__('Default description', 'textdomain'),",
+		  "        'placeholder' => esc_html__('Type your description here', 'textdomain'),",
+		  "    ]",
+		  ");"
+		],
+		"description": "Elementor wysiwyg control."
+	},
+	"EL Code Field": {
+		"prefix": "dlcode",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Custom HTML}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::CODE,",
+		  "        'language' => 'html',",
+		  "        'rows' => 20",
+		  "    ]",
+		  ");"
+		],
+		"description": "Elementor CODE control."
+	},
+	"EL Hidden Field": {
+		"prefix": "dlhidden",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Label}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::HIDDEN,",
+		  "        'default' => 'traditional'",
+		  "    ]",
+		  ");"
+		],
+		"description": "Elementor Hidden control."
+	},
+	"EL Switcher Field": {
+		"prefix": "dlswitcher",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Show Title}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::SWITCHER,",
+		  "        'label_on' => esc_html__( 'Show', 'textdomain' ),",
+		  "        'label_off' => esc_html__( 'Hide', 'textdomain' ),",
+		  "        'return_value' => 'yes',",
+		  "        'default' => 'yes'",
+		  "    ]",
+		  ");"
+		],
+		"description": "Elementor Switcher control."
+	},
+	"EL Popover Toggle Field": {
+		"prefix": "dlpopover",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:popover_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Popover Title}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::POPOVER_TOGGLE,",
+		  "        'label_off' => esc_html__( 'Default', 'textdomain' ),",
+		  "        'label_on' => esc_html__( 'Custom', 'textdomain' ),",
+		  "        'return_value' => 'yes',",
+		  "        'default' => 'yes'",
+		  "    ]",
+		  ");",
+		  "",
+		  "$$this->start_popover();",
+		  "",
+		  "${3:// Popover controls goes here}",
+		  "",
+		  "$$this->end_popover();"
+		],
+		"description": "Elementor Popover Toggle control."
+	},
+	"EL Select Field": {
+		"prefix": "dlselect",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Field Label}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::SELECT,",
+		  "        'default' => 'solid',",
+		  "        'options' => [",
+		  "            '' => esc_html__( 'Default', 'textdomain' ),",
+		  "            'none' => esc_html__( 'None', 'textdomain' ),",
+		  "            'solid'  => esc_html__( 'Solid', 'textdomain' ),",
+		  "            'dashed' => esc_html__( 'Dashed', 'textdomain' ),",
+		  "            'dotted' => esc_html__( 'Dotted', 'textdomain' ),",
+		  "            'double' => esc_html__( 'Double', 'textdomain' ),",
+		  "        ],",
+		  "        'selectors' => [",
+		  "            '{{WRAPPER}} .your-class' => 'border-style: {{VALUE}};',",
+		  "        ],",
+		  "    ]",
+		  ");"
+		],
+		"description": "Elementor Select control."
+	},
+	"EL Blend Mode Field": {
+		"prefix": "dlblendmode",
+		"description": "Elementor blend mode control.",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Blend Mode}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::SELECT,",
+		  "        'separator' => 'none',",
+		  "        'options' => [",
+		  "            'inherit' => esc_html__( 'Normal', 'textdomain' ),",
+		  "            'multiply' => 'Multiply',",
+		  "            'screen' => 'Screen',",
+		  "            'overlay' => 'Overlay',",
+		  "            'darken' => 'Darken',",
+		  "            'lighten' => 'Lighten',",
+		  "            'color-dodge' => 'Color Dodge',",
+		  "            'saturation' => 'Saturation',",
+		  "            'color' => 'Color',",
+		  "            'difference' => 'Difference',",
+		  "            'exclusion' => 'Exclusion',",
+		  "            'hue' => 'Hue',",
+		  "            'luminosity' => 'Luminosity',",
+		  "        ],",
+		  "        'selectors' => [",
+		  "            '{{WRAPPER}} .your-class' => 'mix-blend-mode: {{VALUE}}',",
+		  "        ],",
+		  "    ]",
+		  ");"
+		]
+	},
+	"EL Select2 Field": {
+		"prefix": "dlselect2",
+		"body": [
+		  "$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Field Label}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::SELECT2,",
+		  "        'label_block' => true,",
+		  "        'multiple' => true,",
+		  "        'options' => [",
+		  "            'title'  => esc_html__( 'Title', 'textdomain' ),",
+		  "            'description' => esc_html__( 'Description', 'textdomain' ),",
+		  "            'button' => esc_html__( 'Button', 'textdomain' ),",
+		  "        ],",
+		  "        'default' => [ 'title', 'description' ]",
+		  "    ]",
+		  ");"
+		],
+		"description": "Elementor Select2 control."
+	},
+	"EL Choose Field": {
+		"prefix": "dlchoose",
+		"description": "Elementor choose control.",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Alignment}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::CHOOSE,",
+		  "        'options' => [",
+		  "            'left' => [",
+		  "                'title' => esc_html__( 'Left', 'textdomain' ),",
+		  "                'icon' => 'eicon-text-align-left',",
+		  "            ],",
+		  "            'center' => [",
+		  "                'title' => esc_html__( 'Center', 'textdomain' ),",
+		  "                'icon' => 'eicon-text-align-center',",
+		  "            ],",
+		  "            'right' => [",
+		  "                'title' => esc_html__( 'Right', 'textdomain' ),",
+		  "                'icon' => 'eicon-text-align-right',",
+		  "            ],",
+		  "        ],",
+		  "        'default' => 'center',",
+		  "        'prefix_class' => 'align-',",
+		  "        'toggle' => true,",
+		  "        'selectors' => [",
+		  "            '{{WRAPPER}} .your-class' => 'text-align: {{VALUE}};',",
+		  "        ]",
+		  "    ]",
+		  ");"
+		]
+	},
+	"EL Choose Responsive Field": {
+		"prefix": "dlrchoose",
+		"description": "Elementor choose responsive control.",
+		"body": [
+		  "$$this->add_responsive_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Alignment}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::CHOOSE,",
+		  "        'options' => [",
+		  "            'left' => [",
+		  "                'title' => esc_html__( 'Left', 'textdomain' ),",
+		  "                'icon' => 'eicon-text-align-left',",
+		  "            ],",
+		  "            'center' => [",
+		  "                'title' => esc_html__( 'Center', 'textdomain' ),",
+		  "                'icon' => 'eicon-text-align-center',",
+		  "            ],",
+		  "            'right' => [",
+		  "                'title' => esc_html__( 'Right', 'textdomain' ),",
+		  "                'icon' => 'eicon-text-align-right',",
+		  "            ],",
+		  "        ],",
+		  "        'default' => 'center',",
+		  "        'prefix_class' => 'align-',",
+		  "        'toggle' => true,",
+		  "        'selectors' => [",
+		  "            '{{WRAPPER}} .your-class' => 'text-align: {{VALUE}};',",
+		  "        ]",
+		  "    ]",
+		  ");"
+		]
+	},
+	"EL Selectors Dictionary": {
+		"prefix": "dldictionary",
+		"description": "Elementor selectors dictionary.",
+		"body": [
+		  "'selectors_dictionary' => [",
+		  "    'left' => 'justify-content: flex-start',",
+		  "    'center' => 'justify-content: center',",
+		  "    'right' => 'justify-content: flex-end',",
+		  "],",
+		  "'selectors' => [",
+		  "    '{{WRAPPER}} .dl-heading-tag' => '{{VALUE}}'",
+		  "]"
+		]
+	},
+	"EL Color Field": {
+		"prefix": "dlcolor",
+		"description": "Elementor color control.",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Color}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::COLOR,",
+		  "        'selectors' => [",
+		  "            '{{WRAPPER}} .your-class' => 'color: {{VALUE}}',",
+		  "        ],",
+		  "    ]",
+		  ");"
+		]
+	},
+	"EL Font Family Field": {
+		"prefix": "dlfontfamily",
+		"description": "Elementor font family control.",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Font Family}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::FONT,",
+		  "        'default' => \"'Open Sans', sans-serif\",",
+		  "        'selectors' => [",
+		  "            '{{WRAPPER}} .your-class' => 'font-family: {{VALUE}}',",
+		  "        ],",
+		  "    ]",
+		  ");"
+		]
+	},
+	"EL Date Picker Field": {
+		"prefix": "dldatepicker",
+		"description": "Elementor date picker control.",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Date}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::DATE_TIME,",
+		  "        'picker_options' => [",
+		  "            'dateFormat' => 'Y-m-d' //https://flatpickr.js.org/formatting/",
+		  "        ]",
+		  "    ]",
+		  ");"
+		]
+	},
+	"EL Gallery Field": {
+		"prefix": "dlgallery",
+		"description": "Elementor gallery control.",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Add Images}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::GALLERY,",
+		  "        'show_label' => false,",
+		  "        'default' => []",
+		  "    ]",
+		  ");"
+		]
+	},
+	"EL Repeater Field": {
+		"prefix": "dlrepeater",
+		"description": "Elementor repeater control.",
+		"body": [
+		  "$$repeater = new Repeater();",
+		  "",
+		  "$$repeater->add_control(",
+		  "    'icon',",
+		  "    [",
+		  "        'label'   => esc_html__( 'Icon', 'textdomain' ),",
+		  "        'type'    => \\Elementor\\Controls_Manager::ICONS,",
+		  "        'default' => [",
+		  "            'value'   => 'fas fa-check',",
+		  "            'library' => 'solid',",
+		  "        ],",
+		  "    ]",
+		  ");",
+		  "",
+		  "$$repeater->add_control(",
+		  "    'heading', [",
+		  "        'label'       => esc_html__( 'Heading', 'textdomain' ),",
+		  "        'type'        => \\Elementor\\Controls_Manager::TEXT,",
+		  "        'default'     => esc_html__( 'Business Solution', 'textdomain' ),",
+		  "        'label_block' => true,",
+		  "    ]",
+		  ");",
+		  "",
+		  "$$repeater->add_control(",
+		  "    'description',",
+		  "    [",
+		  "        'label'       => esc_html__( 'Description', 'textdomain' ),",
+		  "        'type'        => \\Elementor\\Controls_Manager::TEXTAREA,",
+		  "        'rows'        => 5,",
+		  "        'placeholder' => esc_html__( 'Description goes here...', 'textdomain' ),",
+		  "    ]",
+		  ");",
+		  "",
+		  "",
+		  "$$this->add_control(",
+		  "    'list_items',",
+		  "    [",
+		  "        'label'       => esc_html__( 'List Items', 'textdomain' ),",
+		  "        'type'        => \\Elementor\\Controls_Manager::REPEATER,",
+		  "        'fields'      => $$repeater->get_controls(),",
+		  "        'default'     => [",
+		  "            [",
+		  "                'icon'   => [",
+		  "                    'value'   => 'fas fa-check',",
+		  "                    'library' => 'fa-solid',",
+		  "                ],",
+		  "                'heading' => esc_html__( 'Business Solution'),",
+		  "                'description' => esc_html__( 'We develop highly complex technical projects geared to improving people quality of life.', 'textdomain' ),",
+		  "            ],",
+		  "            [",
+		  "                'icon'   => [",
+		  "                    'value'   => 'fas fa-check',",
+		  "                    'library' => 'fa-solid',",
+		  "                ],",
+		  "                'heading' => esc_html__( 'Data Analytics'),",
+		  "                'description' => esc_html__( 'We develop highly complex technical projects geared to improving people quality of life.', 'textdomain' ),",
+		  "            ]",
+		  "        ],",
+		  "        'title_field' => '{{{ elementor.helpers.renderIcon( this, icon, {}, \"i\", \"panel\" ) }}} {{{ heading }}}',",
+		  "    ]",
+		  ");"
+		]
+	},
+	"EL Animation Field": {
+		"prefix": "dlanimation",
+		"description": "Elementor animation control.",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Entrance Animation}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::ANIMATION,",
+		  "        'prefix_class' => 'animated '",
+		  "    ]",
+		  ");"
+		]
+	},
+	"EL Exit Animation Field": {
+		"prefix": "dlexitanimation",
+		"description": "Elementor exit animation control.",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Exit Animation}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::EXIT_ANIMATION,",
+		  "        'prefix_class' => 'animated ',",
+		  "    ]",
+		  ");"
+		]
+	},
+	"EL Hover Animation Field": {
+		"prefix": "dlhoveranimation",
+		"description": "Elementor hover animation control.",
+		"body": [
+		  "$$this->add_control(",
+		  "    '${1:field_id}',",
+		  "    [",
+		  "        'label' => esc_html__( '${2:Hover Animation}', 'textdomain' ),",
+		  "        'type' => \\Elementor\\Controls_Manager::HOVER_ANIMATION",
+		  "    ]",
+		  ");"
+		]
+	},
+	"EL Condition": {
+		"prefix": "dlcondition",
+		"description": "Elementor condition.",
+		"body": [
+		  "'condition' => [",
+		  "    'customize!' => 'yes'",
+		  "]"
+		]
+	}
+}

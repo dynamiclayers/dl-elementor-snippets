@@ -1,0 +1,44 @@
+{
+  "name": "dl-elementor-snippets",
+  "displayName": "DL Elementor Snippets",
+  "description": "Elementor controls snippets.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dynamiclayers/dl-elementor-snippets.git"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "php",
+        "path": "./snippets/data-controls.code-snippets"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/multi-value-controls.code-snippets"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/units-controls.code-snippets"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/ui-controls.code-snippets"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/group-controls.code-snippets"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/functions.code-snippets"
+      }
+    ]
+  }
+}
