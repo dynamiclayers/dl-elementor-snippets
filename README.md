@@ -1,5 +1,9 @@
 # DL Elementor Snippets
 
+![Version](https://img.shields.io/visual-studio-marketplace/v/dynamiclayers.dl-elementor-snippets?style=flat-square)
+![Downloads](https://img.shields.io/visual-studio-marketplace/d/dynamiclayers.dl-elementor-snippets?style=flat-square)
+![Rating](https://img.shields.io/visual-studio-marketplace/r/dynamiclayers.dl-elementor-snippets?style=flat-square)
+
 This will help you to build the Elementor widgets faster to autocomplete Elementor controls. There is included all Elementor controls available to autocomplete.
 
 ### How to use
