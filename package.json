@@ -1,14 +1,31 @@
 {
   "name": "dl-elementor-snippets",
   "displayName": "DL Elementor Snippets",
-  "description": "Elementor controls snippets.",
+  "description": "Creating Elementor Plugin Widgets in WordPress Using DL Elementor Snippets.",
+  "icon": "images/logo.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.81.0"
   },
+  "publisher": "DynamicLayers",
+	"author": {
+		"name": "DynamicLayers"
+	},
+  "keywords": [
+		"WordPress",
+		"Elementor",
+		"Elementor Widgets",
+		"Widgets",
+		"Elementor Controls",
+		"Controls",
+		"Page Builder",
+    "DL Snippets",
+    "DynamicLayers"
+	],
   "categories": [
     "Snippets"
   ],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/dynamiclayers/dl-elementor-snippets.git"
@@ -37,7 +54,7 @@
       },
       {
         "language": "php",
-        "path": "./snippets/functions.code-snippets"
+        "path": "./snippets/utilities.code-snippets"
       }
     ]
   }

@@ -4,4 +4,4 @@ All notable changes to the "dl-elementor-snippets" extension will be documented 
 
 ## [0.0.1]
 
-- Initial release
+- Initial release [08.08.2023]
