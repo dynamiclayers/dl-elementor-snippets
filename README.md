@@ -22,36 +22,69 @@ Install via Extension Marketplace
 
 Autocomplete for:
 
-|   Controls           |   Trigger        |
-| :------------------: | :--------------: |
-| Text                 | dltext           |
-| Textarea             | dltextarea       |
-| Number               | dlnumber         |
-| WYSIWYG              | dlwysiwyg        |
-| Code                 | dlcode           |
-| Hidden               | dlhidden         |
-| Switcher             | dlswitcher       |
-| Popover Toggle       | dlpopover        |
-| Select               | dlselect         |
-| Blend Mode           | dlblendmode      |
-| Select2              | dlselect2        |
-| Choose               | dlchoose         |
-| Choose Responsive    | dlrchoose        |
-| Selectors Dictionary | dldictionary     |
-| Color                | dlcolor          |
-| Font Family          | dlfontfamily     |
-| Date Picker          | dldatepicker     |
-| Gallery              | dlgallery        |
-| Repeater             | dlrepeater       |
-| Animation            | dlanimation      |
-| Exit Animation       | dlexitanimation  |
-| Hover Animation      | dlhoveranimation |
-| Condition            | dlcondition      |
+|   Controls                  |   Trigger        |
+| :-------------------------: | :--------------: |
+| Text                        | dltext           |
+| Textarea                    | dltextarea       |
+| Number                      | dlnumber         |
+| WYSIWYG                     | dlwysiwyg        |
+| Code                        | dlcode           |
+| Hidden                      | dlhidden         |
+| Switcher                    | dlswitcher       |
+| Popover Toggle              | dlpopover        |
+| Select                      | dlselect         |
+| Blend Mode                  | dlblendmode      |
+| Select2                     | dlselect2        |
+| Choose                      | dlchoose         |
+| Choose Responsive           | dlrchoose        |
+| Selectors Dictionary        | dldictionary     |
+| Color                       | dlcolor          |
+| Font Family                 | dlfontfamily     |
+| Date Picker                 | dldatepicker     |
+| Gallery                     | dlgallery        |
+| Repeater                    | dlrepeater       |
+| Animation                   | dlanimation      |
+| Exit Animation              | dlexitanimation  |
+| Hover Animation             | dlhoveranimation |
+| Typography                  | dltypo           |
+| Text Stroke                 | dltextstroke     |
+| Text Shadow                 | dltextshadow     |
+| Text Shadow Group           | dltextshadowgroup|
+| Box Shadow                  | dlboxshadow      |
+| Box Shadow Group            | dlboxshadowgroup |
+| Border                      | dlborder         |
+| Background                  | dlbg             |
+| Image Size                  | dlimgsize        |
+| CSS Filter                  | dlcssfilter      |
+| URL                         | dlurl            |
+| Media                       | dlmedia          |
+| Image Dimension             | dlimagedimension |
+| Icon                        | dlicon           |
+| Icon Recommended            | dliconrecomended |
+| Icon SVG Exclude            | dliconsvgexclude |
+| Slider                      | dlslider         |
+| Opacity                     | dlopacity        |
+| Padding                     | dlpadding        |
+| Margin                      | dlmargin         |
+| Border Radius               | dlbdrs           |
+| Heading UI Field            | dlheading        |
+| Raw HTML UI Field           | dlrawhtml        |
+| Divider UI Field            | dldivider        |
+| Separator                   | dlseparator      |
+| Condition                   | dlcondition      |
+| Tab Content Section         | dlcontentsection |
+| Tab Style Section           | dlstylesection   |
+| Tab Control                 | dltab            |
+| Render HTML Attributes      | dlrenderattr     |
+| Get Render Attribute String | dlgetrenderattr  |
+| Inline Editing Attributes   | dlinlineediting  |
+| Get Script Depends          | dlscriptdepends  |
+| Get Style Depends           | dlstyledepends   |
 
 ### Details
 
 - License: GPLv3
-- Version: 0.0.1
+- Version: 0.0.2
 - Extension URI: https://github.com/dynamiclayers/dl-elementor-snippets
 - [Report Issues](https://github.com/dynamiclayers/dl-elementor-snippets/issues)
 

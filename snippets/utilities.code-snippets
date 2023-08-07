@@ -76,7 +76,7 @@
         "prefix": "dlgetrenderattr",
         "description": "Elementor get render attribute string.",
         "body": [
-          "<?php echo $$this->get_render_attribute_string( 'wrapper' ); ?>"
+          "echo $$this->get_render_attribute_string( 'wrapper' );"
         ]
     },
     "EL Inline Editing Attributes": {
