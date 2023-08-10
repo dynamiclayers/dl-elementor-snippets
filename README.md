@@ -84,7 +84,7 @@ Autocomplete for:
 ### Details
 
 - License: GPLv3
-- Version: 0.0.2
+- Version: 0.0.3
 - Extension URI: https://github.com/dynamiclayers/dl-elementor-snippets
 - [Report Issues](https://github.com/dynamiclayers/dl-elementor-snippets/issues)
 

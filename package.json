@@ -3,7 +3,7 @@
   "displayName": "DL Elementor Snippets",
   "description": "Creating Elementor Plugin Widgets in WordPress Using DL Elementor Snippets.",
   "icon": "images/logo.png",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.81.0"
   },
